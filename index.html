@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>portfolio website</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+     <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <!--<img src="../photos/logo.png" class="logo"---->
+                <ul>
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#my project">My project</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                   
+                </ul>
+                
+            </nav>
+            <div class="header-text">
+                <p>Geomatics Engineering</p>
+                <h1>Hi,I'm <span>Rupa</span><br>Bajagain from Dhulikhel</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="r">
+                <div class="about-col-1">
+                   <!---- <img class="img-deg"src="../photos/background.jpeg"-->
+                
+            
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am a dedicated Geomatic Engineer who completed my +2 education from Banepa NIST.
+                         With a strong academic background and hands-on knowledge in GIS, remote sensing,
+                          and cartography, I am passionate about applying geospatial technologies to solve 
+                          real-world problems. My journey has also been shaped by leadership roles and 
+                          volunteering experiences, which have strengthened my ability to work in teams
+                           and contribute meaningfully to society. Aiming high and dreaming big,
+                            I am driven by the vision to create impactful solutions and make a positive 
+                            difference in the world through innovation and perseverance.</p>
+
+                         <div class="tab-titles">
+                            <p class="tab-links active-link"onclick="opentab('skills')">Skills</p>
+                            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                            <p class="tab-links" onclick="opentab('education')">Education</p>
+
+                         </div>
+                         <div class="tab-contents active-tab" id="skills">
+                            <ul>
+                                <li><span>Surveying and Geodetic Skills</span><br></li>
+                                <li><span>Geographic Information Systems (GIS) </span><br></li>
+                                <li><span>Cartography and Mapping</span><br></li>
+                                <li><span>3D modelling</span><br></li>
+                                <li><span>Remote Sensing</span><br></li>
+                                
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="experience">
+                            <ul>
+                                <li><span>Designed thematic maps, land use/land cover maps</span><br></li>
+                                <li><span>Fieldwork Experience using TS,Theodolite</span><br></li>
+                                <li><span>using AHP and Fuzzy AHP for disaster response</span><br></li>
+                                <li><span>Carried out road alignment surveys, hydrological surveys</span><br></li>
+                                <li><span>Carried out image classification</span><br></li>
+                                
+                                
+                            </ul>
+                         </div>
+                         <div class="tab-contents" id="education">
+                            <ul>
+                                <li><span>primary Education from Deepshikha English Boarding school</span><br></li>
+                                <li><span>secondary Education from kshitij English Boarding school </span><br></li>
+                                <li><span>Higher secondary Education from Banepa Nist</span><br></li>
+                                <li><span>Undergradute Education from kathmandu University</span><br></li>
+                                
+                            </ul>
+                         </div>
+                </div>
+                  
+            </div>
+        </div>
+    </div>
+    <!--portfolio----->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="Work-list">
+                <div class="work">
+                    <img src="../photos/field.jpeg">
+                    <div class="layer">
+                        <h3>Field survey</h3>
+                        <p>A control point is eastbalished in the ground with the theodolite 
+                             used as a reference for future surveying work.</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../photos/gg.png">
+                    <div class="layer">
+                        <h3>GIS</h3>
+                        <p>GIS (Geographic Information System) involves capturing, storing,
+                             analyzing, managing, and displaying spatial or geographic data.
+                             It's used in many fields to make decisions, identify patterns,
+                            and solve problems related to location.</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="../photos/map.jpeg">
+                    <div class="layer">
+                        <h3>Cartography</h3>
+                        <p>Cartography is the art, science, and technology of making maps.It involves 
+                            designing, producing, and studying maps that visually represent geographic data, 
+                            helping us understand the spatial relationships between places.</p>
+                             <a href="#"><i class="fa-solid fa-square-arrow-up-right"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">see more</a>
+        </div>
+    </div>
+    <!-----project-->
+</div>
+
+<section id ="my project" class = "forthSection">
+ <div class = "container">
+     <h2 class = "pro" style ="font-size: 55px;font-family: '">My Project</h2>
+     <div class ="project-list">
+         <div>
+         <H3>Flood Analysis using AHP and Fuzzy AHP</H3>
+         <P>This project aims to evaluate the sensitivity of spatial analysis using both the Analytic Hierarchy Process (AHP) and Fuzzy AHP methods.
+
+         </P>
+         <a href ="project1.pdf">Learn more</a>
+         </div>
+         <div>
+             <H3>Valuing Land, Saving Lives: A Fresh Look at Disaster Management</H3>
+             <P>The project emphasizes proactive planning to reduce risk and protect vulnerable communities.</P>
+             <a href ="land valuation and its impact on disaster (REport of la in 6th semester).pdf">Learn more</a>
+             </div>
+             <div>
+                 <H3>Python used in QGIS Plugins</H3>
+                 <P>This project analyzes urban sprawl in the Kathmandu Valley and examines its impact on surrounding vegetation and green spaces.</P>
+                 <a  href ="poster of urbanization using the python plugin.png".png.png">Learn more</a>
+                 </div>
+     </div>
+    </section>
+</div>
+    <!---contact-->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i>rupabajgain33@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i></i>9843082418</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/share/1CBJhbwKZh/" target="_blank" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+                
+                        <a href="https://www.instagram.com/rupabajgain48/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/feed/?trk=guest_homepage-basic_google-one-tap-submit" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                        
+                      </div>
+                </div>
+                    <div class="contact-right">
+                        <form>
+                            <input type="text" name="Name" placeholder="Your Name" required>
+                            <input type="email" name ="email" placeholder="Your Email" required>
+                            <textarea name ="message" rows="6" placeholder="Your message"></textarea>
+                            <button type = "submit" class="btn btn2">submit</button>
+                        </form>
+
+                    </div>
+                    
+            </div>
+        </div>
+        
+    </section>
+
+    <div id="mapping"style = "height:100vh; background-color:black; margin-top: 30px; margin-bottom:10px; margin-left:100px; "><h1 id="chnage"style = "font-size 30px;" >My location </h1>
+                    <div id="map"style="height:80vh; width:50%;border:2px solid black; border-radius:10px;"></div> </div>
+        </div>
+  
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+      
+    </script>
+
+    <script > 
+   
+        window.onload = function() {
+  var map = L.map('map');
+
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '© OpenStreetMap contributors'
+  }).addTo(map);
+
+  L.marker([27.64, 85.57]).addTo(map)
+    .bindPopup('Residential Address: Dhulikhel, Kavre');
+
+  var bounds = L.latLngBounds([[27.6, 85.5]]);
+  map.fitBounds(bounds);
+};
+
+    
+
+    </script>
+    
+</body>
+</html>
